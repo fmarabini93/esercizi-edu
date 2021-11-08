@@ -17,6 +17,7 @@ input {
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      color: white;
-      background-color: royalblue;
+      box-shadow: 1px 1px 1px 1px;
+      outline: none;
+      background-color: white;
 }

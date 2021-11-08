@@ -1,4 +1,3 @@
-<?php include "../db/createDB.php" ?>
 <!DOCTYPE html>
 <html lang="en">
       <head>
@@ -9,7 +8,7 @@
             <title>Login</title>
       </head>
       <body>
-            <form action="admin.php" method="POST">
+            <form action="../db/login_user.php" method="POST">
                   <input type="text" name="username" id="username" placeholder="Inserisci il tuo username">
                   <input type="text" name="password" id="password" placeholder="Inserisci la tua password">
                   <input type="submit" value="Entra">

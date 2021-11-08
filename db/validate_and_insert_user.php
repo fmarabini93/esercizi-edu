@@ -48,7 +48,7 @@
             } else {
                   $query= "INSERT INTO users (username, password, univoco) VALUES ('$inserted_username', '$passwd', '$univoco')";
                   $sql = mysqli_query($db_conn, $query);
-                  header("Location: ../pages/login.php?reg=ok");
+                  header("Location: ../pages/login.php?regOK");
                   echo "registrazione effettuata";
             }
       } else if ($dangerousCharacters == 1) {
