@@ -10,7 +10,7 @@
       <body>
             <form action="../db/validate_and_insert_user.php" method="POST">
                   <input type="text" name="username" id="username" placeholder="Inserisci il tuo username" required>
-                  <input type="text" name="password" id="password" placeholder="Inserisci la tua password" required>
+                  <input type="password" name="password" id="password" placeholder="Inserisci la tua password" required>
                   <input type="submit" value="Registrati">
             </form>
       </body>

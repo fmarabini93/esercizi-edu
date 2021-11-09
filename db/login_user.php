@@ -28,8 +28,8 @@
                   $unregisteredUser = "1";
                   echo "<p>Nome utente o password errati. <a href='../pages/login.php'>Torna indietro</a></p>";
             } else {
-                  setcookie("univoco", $univoco);
-                  header("Location: ../pages/index.php?loginOK");
+                  setcookie("univoco", $univoco, time()+3600, "/");
+                  header("Location: ../pages/films_index.php?loginOK");
             }
       } else if ($dangerousCharacters == 1) {
             echo "<p>Hai inserito caratteri non ammessi: ([<>&(),%'?+]). <a href='../pages/login.php'>Torna indietro</a></p>";
