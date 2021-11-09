@@ -9,9 +9,11 @@
       </head>
       <body>
             <form action="../db/validate_and_insert_user.php" method="POST">
+                  <label for="username">Username</label>
                   <input type="text" name="username" id="username" placeholder="Inserisci il tuo username" required>
+                  <label for="password">Password</label>
                   <input type="password" name="password" id="password" placeholder="Inserisci la tua password" required>
-                  <input type="submit" value="Registrati">
+                  <input class="submit" type="submit" value="Registrati">
             </form>
       </body>
 </html>

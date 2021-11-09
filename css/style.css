@@ -1,10 +1,10 @@
-input {
-      margin: 10px;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      box-shadow: 1px 1px 1px 1px;
-      outline: none;
-      background-color: white;
+label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+}
+
+.submit {
+      display: block;
+      margin-top: 15px;
 }
