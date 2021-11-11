@@ -4,16 +4,24 @@ label {
       margin-bottom: 5px;
 }
 
+.text_center {
+      text-align: center;
+}
+
 .submit {
       display: block;
       margin-top: 15px;
+}
+
+#list {
+      margin-top: 50px;
 }
 
 .clearfix {
       display: table;
       content: "";
       clear: both;
-      margin-top: 50px;
+      margin: auto;
 }
 
 .card {
@@ -21,4 +29,6 @@ label {
       float: left;
       margin: 0 20px;
       padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px;
 }

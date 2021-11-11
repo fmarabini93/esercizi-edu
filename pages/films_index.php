@@ -51,7 +51,8 @@
             </form>
 
             <!-- Lista film -->
-            <section class="clearfix">
+            <h2 class="text_center">I miei film</h2>
+            <section id="list" class="clearfix">
                   <?php foreach($films as $film) { ?>
                         <div class="card">
                               <h3><?echo $film['title'] ?></h3>
