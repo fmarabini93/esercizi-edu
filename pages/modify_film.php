@@ -31,7 +31,7 @@
                   <input type="hidden" name="id" value="<?echo $film['id'] ?>">
                   <input class="submit" type="submit" value="Modifica">
             </form>
-            <form class="inline_b" action="../db/delete_film.php" method="POST" onsubmit="return confirm('Sicuro di voler eliminare il film?')">
+            <form class="inline_b" action="../db/delete_film.php" method="POST" onsubmit="return confirm('Sicuro di voler eliminare il film <?echo $film['title'] ?>?')">
                   <input type="hidden" name="id" value="<?echo $film_id; ?>">
                   <input type="submit" value="Elimina">
             </form>
