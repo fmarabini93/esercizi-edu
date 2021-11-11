@@ -59,8 +59,8 @@
                                     <input type="hidden" name="film_id" value="<?echo $film['id']; ?>">
                                     <input type="submit" value="Modifica">
                               </form>
-                              <form class="inline_b m_top" action="delete_film.php" method="POST">
-                                    <input type="hidden" value="<?echo $film['id']; ?>">
+                              <form class="inline_b m_top" action="../db/delete_film.php" method="POST" onsubmit="return confirm('Sicuro di voler eliminare il film <?echo $film['title'] ?>?')">
+                                    <input type="hidden" name="id" value="<?echo $film['id']; ?>">
                                     <input type="submit" value="Elimina">
                               </form>
                         </div>

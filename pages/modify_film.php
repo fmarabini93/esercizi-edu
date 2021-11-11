@@ -18,11 +18,10 @@
       </head>
       <body>
             <p><a href="films_index.php">Torna indietro</a></p>
-            <p><a href="">Elimina</a></p>
 
             <!-- Form modifica film -->
             <h2>Modifica il film "<?echo $film['title']; ?>"</h2>
-            <form action="../db/update_film.php" method="POST">
+            <form class="inline_b" action="../db/update_film.php" method="POST">
                   <label for="title">Titolo</label>
                   <input type="text" name="title" id="title" value="<?echo $film['title']; ?>" required>
                   <label for="description">Descrizione</label>
@@ -31,6 +30,10 @@
                   <textarea name="cover" id="cover" cols="30" rows="5"><?echo $film['cover']; ?></textarea>
                   <input type="hidden" name="id" value="<?echo $film['id'] ?>">
                   <input class="submit" type="submit" value="Modifica">
+            </form>
+            <form class="inline_b" action="../db/delete_film.php" method="POST" onsubmit="return confirm('Sicuro di voler eliminare il film?')">
+                  <input type="hidden" name="id" value="<?echo $film_id; ?>">
+                  <input type="submit" value="Elimina">
             </form>
       </body>
 </html>
