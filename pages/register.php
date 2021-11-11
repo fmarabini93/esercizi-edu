@@ -8,6 +8,7 @@
             <title>Login</title>
       </head>
       <body>
+            <form action="index.php"><input type="submit" value="Home"></form>
             <h1>Registrati</h1>
             <form action="../db/validate_and_insert_user.php" method="POST">
                   <label for="username">Username</label>

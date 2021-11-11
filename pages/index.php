@@ -12,6 +12,6 @@
       <body>
             <form action="register.php"><input type="submit" value="Registrati"></form>
             <form action="login.php"><input type="submit" value="Entra"></form>
-            <a href="front.php">Lista film</a>
+            <form action="front.php"><input type="submit" value="Lista film"></form>
       </body>
 </html>

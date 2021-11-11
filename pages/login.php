@@ -8,6 +8,7 @@
             <title>Login</title>
       </head>
       <body>
+            <form action="index.php"><input type="submit" value="Home"></form>
             <h1>Entra</h1>
             <form action="../db/login_user.php" method="POST">
                   <label for="username">Username</label>
