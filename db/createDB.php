@@ -3,15 +3,15 @@
       $username = "root";
       $password = "root";
       $db_name = "films_test";
-      $conn = new mysqli($server_name, $username, $password); 
+      $db_conn = new mysqli($server_name, $username, $password); 
 
-      if ($conn->connect_error) {
-            die("<h1>Connection failed: </h1>" . $conn->connect_error);
+      if ($db_conn->connect_error) {
+            die("<h1>Connection failed: </h1>" . $db_conn->connect_error);
       }
 
       $sql = "CREATE DATABASE IF NOT EXISTS $db_name";
-      if ($conn->query($sql) === FALSE) {
-            echo "<h1>Error creating database: </h1>" . $conn->error;
+      if ($db_conn->query($sql) === FALSE) {
+            echo "<h1>Error creating database: </h1>" . $db_conn->error;
       }
 
       include "../db/db_conn.php";

@@ -4,17 +4,24 @@ label {
       margin-bottom: 5px;
 }
 
+.block {
+      display: block;
+}
+.inline_b {
+      display: inline-block;
+}
+
 .text_center {
       text-align: center;
+}
+
+.m_top {
+      margin-top: 50px;
 }
 
 .submit {
       display: block;
       margin-top: 15px;
-}
-
-#list {
-      margin-top: 50px;
 }
 
 .clearfix {
@@ -30,5 +37,5 @@ label {
       margin: 0 20px;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 0 10px;
+      box-shadow: 0 0 5px;
 }
