@@ -8,10 +8,13 @@
             <title>Login</title>
       </head>
       <body>
+            <h1>Entra</h1>
             <form action="../db/login_user.php" method="POST">
-                  <input type="text" name="username" id="username" placeholder="Inserisci il tuo username">
-                  <input type="password" name="password" id="password" placeholder="Inserisci la tua password">
-                  <input type="submit" value="Entra">
+                  <label for="username">Username</label>
+                  <input type="text" name="username" id="username" placeholder="Inserisci il tuo username" required>
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" placeholder="Inserisci la tua password" required>
+                  <input class="submit" type="submit" value="Entra">
             </form>
       </body>
 </html>

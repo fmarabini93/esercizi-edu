@@ -8,6 +8,7 @@
             <title>Login</title>
       </head>
       <body>
+            <h1>Registrati</h1>
             <form action="../db/validate_and_insert_user.php" method="POST">
                   <label for="username">Username</label>
                   <input type="text" name="username" id="username" placeholder="Inserisci il tuo username" required>

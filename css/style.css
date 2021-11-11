@@ -8,3 +8,17 @@ label {
       display: block;
       margin-top: 15px;
 }
+
+.clearfix {
+      display: table;
+      content: "";
+      clear: both;
+      margin-top: 50px;
+}
+
+.card {
+      width: calc(100% / 5) - 40px;
+      float: left;
+      margin: 0 20px;
+      padding: 20px;
+}

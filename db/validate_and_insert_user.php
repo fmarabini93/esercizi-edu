@@ -49,21 +49,6 @@
                   $query= "INSERT INTO users (username, password, univoco) VALUES ('$inserted_username', '$passwd', '$univoco')";
                   $sql = mysqli_query($db_conn, $query);
 
-                  $table_name = $inserted_username . '_films';
-
-                  $films_table = "CREATE TABLE `$table_name` (
-                              usr_id INT(10) UNSIGNED NOT NULL,
-                              id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-                              title VARCHAR(100) NOT NULL,
-                              description TEXT NOT NULL,
-                              PRIMARY KEY (id),
-                              FOREIGN KEY (usr_id) REFERENCES users(id)
-                  )";
-                  if ($db_conn->query($films_table) === FALSE) {
-                        echo "<h1>Error creating table: </h1>" . $db_conn->error;
-                        die();
-                  };
-
                   header("Location: ../pages/login.php?regOK");
             }
       } else if ($dangerousCharacters == 1) {

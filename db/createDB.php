@@ -25,6 +25,20 @@
             UNIQUE KEY (username)
       )";
 
-      if ($db_conn->query($users_table) === FALSE) {
+      $films_table = "CREATE TABLE IF NOT EXISTS films (
+            usr_id INT(10) UNSIGNED NOT NULL,
+            id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+            title VARCHAR(100) NOT NULL,
+            description TEXT NOT NULL,
+            cover TEXT,
+            PRIMARY KEY (id),
+            FOREIGN KEY (usr_id) REFERENCES users(id)
+      )";
+
+      if (mysqli_query($db_conn, $users_table) === FALSE) {
+            echo "<h1>Error creating table: </h1>" . $db_conn->error;
+      }
+
+      if (mysqli_query($db_conn, $films_table) === FALSE) {
             echo "<h1>Error creating table: </h1>" . $db_conn->error;
       }
