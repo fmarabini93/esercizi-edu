@@ -26,15 +26,15 @@
 
             if ($num < 1) {
                   $unregisteredUser = "1";
-                  echo "<p>Nome utente o password errati. <a href='../pages/login.php'>Torna indietro</a></p>";
+                  echo "<p>Nome utente o password errati. <a href='../pages/admin/login.php'>Torna indietro</a></p>";
             } else {
                   setcookie("univoco", $univoco, time()+3600, "/");
-                  header("Location: ../pages/films_index.php?loginOK");
+                  header("Location: ../pages/admin/films_index.php?loginOK");
             }
       } else if ($dangerousCharacters == 1) {
-            echo "<p>Hai inserito caratteri non ammessi: ([<>&(),%'?+]). <a href='../pages/login.php'>Torna indietro</a></p>";
+            echo "<p>Hai inserito caratteri non ammessi: ([<>&(),%'?+]). <a href='../pages/admin/login.php'>Torna indietro</a></p>";
       } else if ($emptyField == 1) {
-            echo "<p>Hai lasciato uno o più campi vuoti. <a href='../pages/login.php'>Torna indietro</a></p>";
+            echo "<p>Hai lasciato uno o più campi vuoti. <a href='../pages/admin/login.php'>Torna indietro</a></p>";
       } else {
-            echo "<p>La lunghezza della password deve essere compresa tra 8 e 20 caratteri. <a href='../pages/login.php'>Torna indietro</a></p>";
+            echo "<p>La lunghezza della password deve essere compresa tra 8 e 20 caratteri. <a href='../pages/admin/login.php'>Torna indietro</a></p>";
       }

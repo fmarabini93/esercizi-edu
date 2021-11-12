@@ -27,7 +27,7 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="../css/style.css">
+            <link rel="stylesheet" href="../../css/style.css">
             <title>Films Index</title>
       </head>
       <body>
@@ -36,7 +36,7 @@
 
             <!-- Form inserimento film -->
             <h2>Inserisci un nuovo film</h2>
-            <form action="../db/insert_film.php" method="POST">
+            <form action="../../db/insert_film.php" method="POST">
                   <label for="title">Titolo</label>
                   <input type="text" name="title" id="title" placeholder="Inserisci il titolo del film" required>
                   <label for="description">Descrizione</label>

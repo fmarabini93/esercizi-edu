@@ -1,5 +1,5 @@
 <?php
-      include '../db/db_conn.php';
+      include '../../db/db_conn.php';
 
       $sql = "SELECT * FROM films";
       $result = mysqli_query($db_conn, $sql);
@@ -17,13 +17,13 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="../css/style.css">
+            <link rel="stylesheet" href="../../css/style.css">
             <title>Lista Film Front</title>
       </head>
       <body>
             <form action="index.php"><input type="submit" value="Home"></form>
             <form action="register.php"><input type="submit" value="Registrati"></form>
-            <form action="login.php"><input type="submit" value="Entra"></form>
+            <form action="../admin/login.php"><input type="submit" value="Entra"></form>
             <h2 class="text_center">Elenco film</h2>
             <section class="clearfix m_top">
                   <?php foreach($films as $film) { ?>

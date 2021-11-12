@@ -14,11 +14,11 @@
             echo "<h1>Error creating database: </h1>" . $db_conn->error;
       }
 
-      include "../db/db_conn.php";
+      include "db_conn.php";
 
       $users_table = "CREATE TABLE IF NOT EXISTS users (
             id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-            username VARCHAR(50) NOT NULL,
+            username VARCHAR(255) NOT NULL,
             password VARCHAR(255) NOT NULL,
             univoco VARCHAR(255) NOT NULL,
             PRIMARY KEY (id),
