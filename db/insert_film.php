@@ -11,5 +11,5 @@
       if (mysqli_query($db_conn, $sql) == FALSE) {
             echo "ERROR: Hush! Sorry $sql. " . mysqli_error($db_conn);
       } else {
-            header("Location: ../pages/admin/films_index.php");
+            header("Location: ../pages/admin/films_index.php?InsertOK");
       }

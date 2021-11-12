@@ -31,6 +31,20 @@
                               <h3><?echo $film['title']; ?></h3>
                               <p><?echo $film['description']; ?></p>
                               <img class="block" src="<?echo $film['cover']; ?>" alt="Copertina non disponibile">
+                              <form class="inline_b m_top" action="../../db/insert_review.php" method="POST">
+                                    <input type="hidden" name="film_id" value="<?echo $film['id']; ?>">
+                                    <label for="title">Titolo</label>
+                                    <input type="text" name="title" id="title" placeholder="Inserisci un titolo" required>
+                                    <label for="description">Recensione</label>
+                                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Scrivi la tua recensione" required></textarea>
+                                    <label for="stars">Valutazione</label>
+                                    <input type="radio" name="stars" id="stars" value="1" required>&#9733;
+                                    <input type="radio" name="stars" value="2">&#9733;&#9733;
+                                    <input type="radio" name="stars" value="3">&#9733;&#9733;&#9733;
+                                    <input type="radio" name="stars" value="4">&#9733;&#9733;&#9733;&#9733;
+                                    <input type="radio" name="stars" value="5">&#9733;&#9733;&#9733;&#9733;&#9733;
+                                    <input type="submit" class="submit" value="Recensisci">
+                              </form>
                         </div>
                   <?php } ?>
             </section>

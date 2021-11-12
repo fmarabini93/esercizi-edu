@@ -5,7 +5,7 @@
             header("Location: login.php?loggedOut");
       }
 
-      include '../db/db_conn.php';
+      include '../../db/db_conn.php';
 
       $sql = "SELECT id, username FROM users WHERE univoco = '$univoco'";
       $result = mysqli_query($db_conn, $sql);
@@ -55,6 +55,11 @@
                               <h3><?echo $film['title']; ?></h3>
                               <p><?echo $film['description']; ?></p>
                               <img class="block" src="<?echo $film['cover']; ?>" alt="Copertina non disponibile">
+                              <form class="inline_b m_top" action="reviews.php" method="POST">
+                                    <input type="hidden" name="user_id" value="<?echo $id; ?>">
+                                    <input type="hidden" name="film_id" value="<?echo $film['id']; ?>">
+                                    <input type="submit" value="Recensioni">
+                              </form>
                               <form class="inline_b m_top" action="modify_film.php" method="POST">
                                     <input type="hidden" name="film_id" value="<?echo $film['id']; ?>">
                                     <input type="submit" value="Modifica">

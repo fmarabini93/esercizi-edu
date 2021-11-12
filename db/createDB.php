@@ -35,10 +35,26 @@
             FOREIGN KEY (usr_id) REFERENCES users(id)
       )";
 
+      $reviews_table = "CREATE TABLE IF NOT EXISTS reviews (
+            user_id INT(10) UNSIGNED NOT NULL,
+            film_id INT(10) UNSIGNED NOT NULL,
+            id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+            title VARCHAR(100) NOT NULL,
+            description TEXT NOT NULL,
+            stars TINYINT NOT NULL,
+            PRIMARY KEY (id),
+            FOREIGN KEY (user_id) REFERENCES users(id),
+            FOREIGN KEY (film_id) REFERENCES films(id)
+      )";
+
       if (mysqli_query($db_conn, $users_table) === FALSE) {
             echo "<h1>Error creating table: </h1>" . $db_conn->error;
       }
 
       if (mysqli_query($db_conn, $films_table) === FALSE) {
+            echo "<h1>Error creating table: </h1>" . $db_conn->error;
+      }
+
+      if (mysqli_query($db_conn, $reviews_table) === FALSE) {
             echo "<h1>Error creating table: </h1>" . $db_conn->error;
       }
