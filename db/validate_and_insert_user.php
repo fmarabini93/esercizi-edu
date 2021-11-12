@@ -44,7 +44,7 @@
 
             if ($num > 0) {
                   $usedUsername = "1";
-                  echo "<p>Esiste già un utente registrato con questa mail. <a href='../pages/front/register.php'>Torna indietro</a></p>";
+                  echo "<p>Esiste già un utente registrato con questa mail. <a href='../pages/admin/register.php'>Torna indietro</a></p>";
             } else {
                   $query= "INSERT INTO users (username, password, univoco) VALUES ('$inserted_username', '$passwd', '$univoco')";
                   $sql = mysqli_query($db_conn, $query);
@@ -52,9 +52,9 @@
                   header("Location: ../pages/admin/login.php?regOK");
             }
       } else if ($dangerousCharacters == 1) {
-            echo "<p>Hai inserito caratteri non ammessi: ([<>&(),%'?+]). <a href='../pages/front/register.php'>Torna indietro</a></p>";
+            echo "<p>Hai inserito caratteri non ammessi: ([<>&(),%'?+]). <a href='../pages/admin/register.php'>Torna indietro</a></p>";
       } else if ($emptyField == 1) {
-            echo "<p>Hai lasciato uno o più campi vuoti. <a href='../pages/front/register.php'>Torna indietro</a></p>";
+            echo "<p>Hai lasciato uno o più campi vuoti. <a href='../pages/admin/register.php'>Torna indietro</a></p>";
       } else {
-            echo "<p>La lunghezza della password deve essere compresa tra 8 e 20 caratteri. <a href='../pages/front/register.php'>Torna indietro</a></p>";
+            echo "<p>La lunghezza della password deve essere compresa tra 8 e 20 caratteri. <a href='../pages/admin/register.php'>Torna indietro</a></p>";
       }

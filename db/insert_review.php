@@ -14,7 +14,7 @@
 
       if (mysqli_query($db_conn, $sql)) {
             echo "<h1>Recensione inserita correttamente!</h1>
-                  <a href='../pages/front/front.php'>Torna indietro</a>";
+                  <a href='../pages/front/films_index.php'>Torna indietro</a>";
       } else {
             echo "ERROR: Hush! Sorry $sql. " . mysqli_error($db_conn);
       }

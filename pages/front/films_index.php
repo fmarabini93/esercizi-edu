@@ -21,8 +21,8 @@
             <title>Lista Film Front</title>
       </head>
       <body>
-            <form action="index.php"><input type="submit" value="Home"></form>
-            <form action="register.php"><input type="submit" value="Registrati"></form>
+            <form action="../index.php"><input type="submit" value="Home"></form>
+            <form action="../admin/register.php"><input type="submit" value="Registrati"></form>
             <form action="../admin/login.php"><input type="submit" value="Entra"></form>
             <h2 class="text_center">Elenco film</h2>
             <section class="clearfix m_top">

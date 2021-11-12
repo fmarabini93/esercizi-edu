@@ -10,8 +10,8 @@
             <title>Home</title>
       </head>
       <body>
-            <form action="register.php"><input type="submit" value="Registrati"></form>
+            <form action="admin/register.php"><input type="submit" value="Registrati"></form>
             <form action="../admin/login.php"><input type="submit" value="Entra"></form>
-            <form action="front.php"><input type="submit" value="Lista film"></form>
+            <form action="films_index.php"><input type="submit" value="Lista film"></form>
       </body>
 </html>
