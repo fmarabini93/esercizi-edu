@@ -31,8 +31,7 @@
             <title>Films Index</title>
       </head>
       <body>
-            <p>Benvenuto, <b><? echo $user['username']; ?></b>!</p>
-            <p><a href="login.php?loggedOut">Logout</a></p>
+            <form action="login.php"><input type="submit" value="Logout"></form>
 
             <!-- Form inserimento film -->
             <h2>Inserisci un nuovo film</h2>

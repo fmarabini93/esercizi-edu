@@ -31,7 +31,7 @@
                               <h3><?echo $film['title']; ?></h3>
                               <p><?echo $film['description']; ?></p>
                               <img class="block" src="<?echo $film['cover']; ?>" alt="Copertina non disponibile">
-                              <form class="inline_b m_top" action="../../db/insert_review.php" method="POST">
+                              <form class="inline_b m_top" action="../../db/insert_review.php" method="POST" onsubmit="return confirm('Sicuro di voler inserire la recensione?')">
                                     <input type="hidden" name="film_id" value="<?echo $film['id']; ?>">
                                     <label for="title">Titolo</label>
                                     <input type="text" name="title" id="title" placeholder="Inserisci un titolo" required>

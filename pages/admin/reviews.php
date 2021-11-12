@@ -27,6 +27,7 @@
             <title>Recensioni</title>
       </head>
       <body>
+            <form action="films_index.php"><input type="submit" value="Torna indietro"></form>
             <h2><?echo $film_title; ?></h2>
             <?php foreach($reviews as $review) { ?>
                   <div class="card">
