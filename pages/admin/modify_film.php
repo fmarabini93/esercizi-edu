@@ -1,5 +1,5 @@
 <?php
-      include '../db/db_conn.php';
+      include '../../db/db_conn.php';
 
       $film_id = $_POST['film_id'];
       $sql = "SELECT * FROM films WHERE id = $film_id";
@@ -21,7 +21,7 @@
 
             <!-- Form modifica film -->
             <h2>Modifica il film "<?echo $film['title']; ?>"</h2>
-            <form class="inline_b" action="../db/update_film.php" method="POST">
+            <form class="inline_b" action="../../db/update_film.php" method="POST">
                   <label for="title">Titolo</label>
                   <input type="text" name="title" id="title" value="<?echo $film['title']; ?>" required>
                   <label for="description">Descrizione</label>
